@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="https://kerst.bastiaanno.nl/lights/mstile-150x150.png?v=3eBGOGrGqd"/>
+            <TileColor>#378b29</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

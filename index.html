@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3eBGOGrGqd">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=3eBGOGrGqd">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=3eBGOGrGqd">
+    <link rel="manifest" href="site.webmanifest?v=3eBGOGrGqd">
+    <link rel="mask-icon" href="safari-pinned-tab.svg?v=3eBGOGrGqd" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon.ico?v=3eBGOGrGqd">
+    <meta name="msapplication-TileColor" content="#378b29">
+    <meta name="msapplication-config" content="browserconfig.xml?v=3eBGOGrGqd">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the header */
+        
+        header {
+            padding: 15px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        
+        nav {
+            float: center;
+            width: 100%;
+            padding: 20px;
+            color: white;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: center;
+            padding: 20px;
+            width: 100%;
+            color: white;
+        }
+        /* Clear floats after the columns */
+        
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the footer */
+        
+        footer {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+            line-height: 1rem;
+            color: white;
+            text-align: center;
+        }
+        
+        .statusdiv {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <title>Kerstlampjes </title>
+</head>
+
+<body>
+    <ul class="lightrope" style="display: none;">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <header>
+        <h2>Kerstlampjes</h2>
+    </header>
+    <section>
+        <nav>
+            <div class="statusdiv">
+                <!-- <h2>Status</h2> -->
+                <div id="div1" class="w3-card-4 w3-panel w3-round">
+                    <p id="status" class="w3-panel">STATUS...</p>
+                </div>
+                <div id="errorDiv" class="w3-card-4 w3-panel w3-round">
+                    <p id="error" class="w3-panel"></p>
+                </div>
+            </div>
+        </nav>
+        <article>
+            <h1>Bediening</h1>
+            <div class="w3-round"><button type="button" onclick="" class="w3-button w3-light-green" id="toggleLights"><i class='fas fa-lightbulb'></i>&nbsp;AAN</button>&nbsp;
+                <!-- <button type="button" onclick="" class="w3-button w3-red" id="lightsOFF"><i class='far fa-lightbulb'></i>&nbsp;UIT</button></div> -->
+            </div>
+
+        </article>
+    </section>
+    <footer>
+        <p>Kerst
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script> -&nbsp;&nbsp;&copy; Bastiaanno Web Services.</p>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
