@@ -9,6 +9,6 @@ Christmas lights application made using nodejs.
 2. edit port in   `index.js`
 3. run   `node index.js` or use pm2.
 
-`npm start`  availability coming soon.
+`npm start`  availability ~coming soon~ finally here. (long overdue)
 
 That's it.
